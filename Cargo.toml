@@ -1,0 +1,6 @@
+[package]
+name = "asm_rustc_crash_debug_no_regs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
