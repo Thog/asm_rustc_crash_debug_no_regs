@@ -4,7 +4,7 @@
 #[derive(Debug)]
 #[repr(C)]
 pub struct ThreadContext {
-    pub R: [u32; 16]
+    pub r: [u32; 16]
 }
 
 //#[naked]
@@ -63,6 +63,6 @@ pub unsafe extern "C" fn arm_create_thread_context() -> ThreadContext {
     );
     
     ThreadContext {
-        R: [r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15]
+        r: [r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15]
     }
 }
